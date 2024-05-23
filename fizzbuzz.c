@@ -3,7 +3,7 @@
 *****FizzBuzz Assignment*****
 
 Author: Abangira Precious Nimmusiima
-Date: 23rd May, 2023
+Date: 24th May, 2024
 */
 
 #include <stdio.h>
