@@ -4,6 +4,7 @@
 #define MAX_ITEMS 10
 
 int main() {
+  //defined arrays and data types
   int choice, num_items = 0;
   char items[MAX_ITEMS][5];
   int quantities[MAX_ITEMS];
@@ -19,7 +20,7 @@ int main() {
     printf("Enter your choice: ");
     scanf("%d", &choice);
 
-    // Handle each option using if-else statements
+    // Add grocery item
     if (choice == 1) {
       if (num_items >= MAX_ITEMS) {
         printf("Your inventory list is full\n");
@@ -36,7 +37,9 @@ int main() {
         num_items++;
         printf("Item added successfully!\n");
       }
-    } else if (choice == 2) {
+    } 
+    //Choice two: Show what's in your inventory list
+    else if (choice == 2) {
       if (num_items == 0) {
         printf("Inventory is empty!\n");
       } else {
@@ -46,7 +49,9 @@ int main() {
           printf("%s (%d) - %.2f UGX\n", items[i], quantities[i], total_value);
         }
       }
-    } else if (choice == 3) {
+    } 
+    //Choice three: Update items
+    else if (choice == 3) {
       if (num_items == 0) {
         printf("Inventory is empty!\n");
       } else {
@@ -67,7 +72,9 @@ int main() {
           }
         }
       }
-    } else if (choice == 4) {
+    } 
+    //Choice four: Calculate total bill
+    else if (choice == 4) {
       if (num_items == 0) {
         printf("Inventory is empty!\n");
       } else {
@@ -78,7 +85,9 @@ int main() {
 
         printf("Total inventory value: %.2f UGX\n", total_value);
       }
-    } else if (choice == 5) {
+    } 
+    //Choice five: Exit
+    else if (choice == 5) {
       printf("You are leaving the IMS\n");
       return 0;
     } else {
