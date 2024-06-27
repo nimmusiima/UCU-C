@@ -1,3 +1,7 @@
+//Author: Abangira Precious Nimmusiima
+// Date: 27th June, 2024
+
+
 #include <stdio.h>
 #include <string.h>
 
